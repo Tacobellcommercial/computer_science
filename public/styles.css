@@ -552,6 +552,44 @@
   line-height: 1.85rem;
 }
 
+@media (max-width: 1250px){
+  .about{
+    width: 80%;
+  }
+}
+
+@media (max-width: 950px){
+  .about{
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px){
+  .about p{
+    font-size: 1rem;
+  }
+
+  .about{
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px){
+  .about h1{
+    font-size: 2rem;
+  }
+
+  .about h2{
+    font-size: 1.75rem;
+  }
+
+  .about p{
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+  }
+}
+
+
 
 /*Legal*/
 
@@ -569,6 +607,29 @@
 .legal p{
   font-size: 1.25rem;
   font-family: "Roboto Mono", sans-serif;
+}
+
+@media (max-width: 800px){
+  .legal{
+    padding: 5% 7%;
+  }
+
+  .legal h1{
+    font-size: 2rem;
+  }
+  .legal p{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px){
+  .legal p{
+    font-family: "Roboto", sans-serif;
+  }
+
+  .legal h1{
+    font-size: 1.75rem;
+  }
 }
 
 /*Support*/
