@@ -1,0 +1,639 @@
+
+/* NAVBAR */
+
+.navbar{
+  background-color: #6a0ee3 !important;
+}
+
+.navbar a{
+  color: white !important;
+}
+
+.navbar button{
+}
+
+
+.navbar-brand{
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  transition: color 0.25s;
+
+}
+
+.navbar-brand:hover{
+  color: #d4b5ff !important;
+}
+
+.navbar-nav{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-left: auto;
+  margin-right: 15%;
+}
+
+
+
+.navbar-nav a{
+  margin-right: 1rem;
+  margin-left: 1rem;
+  transition: color 0.25s;
+}
+
+.navbar-nav a:hover{
+  color: #adaaaa !important;
+}
+
+@media (max-width: 1350px){
+  .navbar-nav{
+    margin-right: 7.5%;
+  }
+}
+
+
+/*HOME PAGE*/
+
+.home{
+  padding: 15.8% 5%;
+  text-align: center;
+  background-color: #f8ebff;
+  transition: padding 0.5s;
+}
+
+.home i{
+  font-size: 5em;
+  margin-bottom: 2.5rem;
+  color: red;
+  transition: color 0.25s;
+}
+
+.home i:hover{
+  color: #a60000;
+}
+
+.home h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 2.5rem;
+}
+
+.home h2{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2.5rem;;
+}
+
+.home-button{
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 1.25rem;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+
+.home-button i{
+  font-size: 1.25rem;
+  margin: 0;
+  color: inherit;
+}
+
+.home-button i:hover{
+  color: inherit;
+}
+
+@media (max-width: 1830px){
+  .home h1{
+    width: 58%;
+  }
+}
+
+@media (max-width: 1570px){
+  .home h1{
+    width: 70%;
+  }
+}
+
+@media (max-width: 1475px){
+  .home h2{
+    width: 58%;
+  }
+}
+
+@media(max-width: 1305px){
+
+  .home h1, .home h2, .home i{
+    margin-bottom: 1.75rem;
+  }
+  .home-button i{
+    margin: 0;
+  }
+
+  .home h1{
+    font-size: 2.3rem;
+  }
+
+  .home h2{
+    font-size: 1.15rem;
+  }
+
+  .home-button, .home-button i{
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 1000px){
+  .home h1{
+    width: 90%;
+  }
+  .home h2{
+    width: 75%;
+  }
+}
+
+@media (max-width: 750px){
+  .home h1{
+    font-size: 2rem;
+    width: 95%;
+  }
+  .home h2{
+    width: 95%;
+    font-size: 1rem;
+  }
+
+  .home-button, .home-button i{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px){
+  .home h1{
+    font-size: 1.75rem;
+    width: 100%;
+  }
+
+  .home h2{
+    font-size: 0.95rem;
+    width: 100%;
+  }
+  .home-button, .home-button i{
+    font-size: 0.95rem;
+  }
+
+}
+
+/*CONTENT SECTION OF HOME PAGE*/
+
+.content{
+  background-color: white;
+}
+
+.content h1{
+  font-size: 2.75rem;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+  border-style: dotted;
+  padding: 1%;
+}
+
+.content h2{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 2.5%;
+  font-size: 2.5rem;
+}
+
+
+.content .content-overview{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 80rem;
+  max-width: inherit; /*fix for bootstrap*/
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*snark page within content section*/
+
+.content img{
+  transition: 0.25s padding;
+}
+
+.content img:hover{
+  padding: 0.25%;
+}
+
+.content video{
+  width: 30rem;
+}
+
+.content .source-link{
+  display: block;
+  margin-bottom: 1.25rem;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .snark-pages{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80rem;
+  text-align: center;
+}
+
+
+.content .snark-pages img{
+  width: 5%;
+  border-radius: 5px;
+}
+
+
+
+.snark-pages .container{
+  padding: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: inherit; /*fix for bootstrap*/
+  display: flex; /*THIS FIXED EVERYTHING*/
+  align-items: center; /*THIS FIXED EVERYTHING*/
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  box-shadow: 0px 3px 13px -7px rgba(180,180,180, 1);
+}
+
+.content p{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  font-size: 1.15rem;
+}
+
+
+
+.snark-pages .container img{
+  width: 18%;
+}
+
+.content .container .seperate-text{
+  flex: 1; /*TAKE UP REMAINING SPACE*/
+  padding: 1%;
+  text-align: left;
+}
+
+.content .container .seperate-text p{
+  display: block;
+}
+
+.crazy-images{
+  padding: 1%;
+
+}
+
+.snark-pages .crazy-images img{
+  width: 33%;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+#implying-crazy{
+  width: 70%;
+}
+
+#reddit-reviewed{
+  width: 45%;
+}
+
+#room-joke{
+  width: 70%;
+}
+
+#mod-announcement{
+  width: 70%;
+}
+
+#its-justified{
+  width: 50%;
+  margin-bottom: 2.5rem;
+}
+
+#crazy-ctas{
+  width: 70%;
+}
+
+@media (max-width: 1450px){
+  .content .content-overview{
+    width: 58rem;
+  }
+
+  .content .snark-pages{
+    width: 58rem;
+  }
+
+  .content .container .seperate-text p{
+    display: block;
+    font-size: 1rem;
+  }
+
+  .content h1{
+    font-size: 2.5rem;
+  }
+
+  .content h2{
+    font-size: 2.25rem;
+  }
+
+  .snark-pages .crazy-images img{
+    width: 45%;
+
+  }
+
+}
+
+
+@media (max-width: 1050px){
+  .content .content-overview{
+    width: 90%;
+  }
+
+  .content .snark-pages{
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 950px){
+  .content .container{
+    display: block;
+  }
+
+  .snark-pages .container img{
+    width: 15rem;
+  }
+
+  .snark-pages .crazy-images img{
+    width: 30rem;
+
+  }
+
+  #implying-crazy{
+    width: 90%;
+  }
+
+  #reddit-reviewed{
+    width: 70%;
+  }
+
+  #room-joke{
+    width: 90%;
+  }
+
+  #its-justified{
+    width: 90%;
+  }
+}
+
+@media (max-width: 630px){
+  #implying-crazy, #reddit-reviewed, #room-joke, #its-justified, #crazy-ctas, #mod-announcement{
+    width: 100%;
+  }
+  .snark-pages .crazy-images img{
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 650px){
+
+  .content p{
+    font-size: 0.9rem;
+  }
+
+
+  .content h1{
+    font-size: 2.25rem;
+  }
+
+  .content h2{
+    font-size: 1.8rem;
+  }
+
+  .snark-pages .container img{
+    width: 45%;
+  }
+
+  .content video{
+    width: 90%;
+  }
+
+
+}
+
+/*double standard section of home page*/
+
+.content .double-standard{
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 80rem;
+  text-align: center;
+}
+
+.double-standard h2{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.double-standard img{
+  width: 45%;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1450px){
+  .content .double-standard{
+    width: 58rem;
+  }
+}
+
+@media (max-width: 1050px){
+  .content .double-standard{
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 950px){
+  .content .double-standard img{
+    width: 25rem;
+  }
+}
+
+@media (max-width: 650px){
+  .content .double-standard img{
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px){
+  .content .double-standard img{
+    width: 100%;
+  }
+}
+
+
+/*footer of content home page*/
+
+.footer{
+    padding: 2.5%;
+    text-align: center;
+    background-color: #6a0ee3;
+    margin-top: 3.5rem;
+}
+
+.footer p{
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ABOUT PAGE */
+.about{
+  padding: 7% 7%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  transition: padding 0.75s;
+}
+
+.about h1{
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: bolder;
+  transition: opacity 0.75s;
+  opacity: 0;
+}
+
+.about hr{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-top: 3px dashed gray;
+}
+
+.about h2{
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+
+}
+
+.about p{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  color: gray;
+  font-size: 1.05rem;
+  line-height: 1.85rem;
+}
+
+
+/*Legal*/
+
+.legal{
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.legal h1{
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.legal p{
+  font-size: 1.25rem;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+/*Support*/
+.support{
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.support h1{
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.support p{
+  font-size: 1.25rem;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.support a{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  display: block;
+  font-size: 1.25rem;
+}
+
+/* Contact */
+
+.contact{
+  padding: 7% 15%;
+  text-align: center;
+}
+
+
+.contact h1{
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.contact p{
+  font-size: 1.25rem;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+.contact a{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  display: block;
+  font-size: 1.25rem;
+}
+
+/*Error Page*/
+.error-not-found{
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.error-not-found h1{
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+.error-not-found h2{
+  font-size: 1.25rem;
+  font-family: "Roboto Mono", sans-serif;
+}
