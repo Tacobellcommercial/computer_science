@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Tacobellcommercial/computer_science/issues"
   },
-  "homepage": "https://github.com/Tacobellcommercial/computer_science#readme"
+  "homepage": "https://github.com/Tacobellcommercial/computer_science#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
